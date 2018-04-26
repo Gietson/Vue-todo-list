@@ -1,6 +1,6 @@
-# vue-todo
+# vue-todo-list
 
-> A Vue.js project
+> A Vue.js project with JSON Server
 
 ## Build Setup
 
@@ -8,8 +8,16 @@
 # install dependencies
 npm install
 
+# install JSON Server
+npm install -g json-server
+
+# start JSON Server
+json-server --watch db.json
+
 # serve with hot reload at localhost:8080
 npm run dev
+
+
 
 # build for production with minification
 npm run build
