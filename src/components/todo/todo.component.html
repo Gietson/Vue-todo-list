@@ -1,0 +1,33 @@
+<section class="todo">
+  <h1>todo Component</h1>
+
+  <p v-if="!todos">
+    <em>Loading...</em>
+  </p>
+
+  <v-layout row wrap>
+    <v-flex xs12>
+      <v-text-field @keyup.enter="add" box label="New todo item" v-model="newItem"></v-text-field>
+    </v-flex>
+  </v-layout>
+
+  <table class="table" v-if="todos">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Value</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="(todo, index) in todos">
+        <td>{{todo.id}}</td>
+        <td>{{todo.value}}</td>
+        <td>
+          <v-btn flat small color="error" @click="remove(index,todo.id)">Remove</v-btn>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>

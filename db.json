@@ -1,0 +1,15 @@
+{
+  "todos": [{
+      "id": 1,
+      "value": "Buy a new computer"
+    },
+    {
+      "id": 2,
+      "value": "Clean up the room"
+    },
+    {
+      "id": 3,
+      "value": "Wash the dishes"
+    }
+  ]
+}
